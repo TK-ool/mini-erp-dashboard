@@ -1,6 +1,6 @@
 # Mini-ERP und Inventory Management Dashboard
 
-Ein kompakter \*\*Enterprise-Resource-Planning (ERP)\*\* und \*\*Warehouse Management System (WMS)\*\* Prototyp für einen imaginären Getränke-Großhandel.
+Ein kompakter **Enterprise-Resource-Planning (ERP)** und **Warehouse Management System (WMS)** Prototyp für einen imaginären Getränke-Großhandel.
 
 Dieses Projekt demonstriert das Zusammenspiel aus einer relationalen Datenbankarchitektur, Backend-Logik und einer modernen und interaktiven Web-Benutzeroberfläche.
 
@@ -41,6 +41,6 @@ py -m streamlit run app.py
 
 Um Datenredundanzen und Inkonsistenzen im ERP-System vollständig zu vermeiden, steuert das System die Bestände über zwei zentrale Prinzipien:
 
-1. **Atomare Speicherung:** Der einzige physisch veränderbare Zähler in der Tabelle `produkte` ist `gesamt\_flaschen` (die kleinstmögliche logistische Einheit). Einzelflaschenbruch oder Teilmengen führen somit nie zu Rundungsfehlern.
-2.  **Transaktions-Logging:** Bestandsveränderungen werden nicht flüchtig überschrieben, sondern zeitscharf in der Tabelle `lager\_historie` mitgeschrieben. Der zeitliche Verlauf im Frontend wird performant über die kumulierte Summe (`cumsum()`) des transaktionalen Deltas errechnet.
+1. **Atomare Speicherung:** Der einzige physisch veränderbare Zähler in der Tabelle `produkte` ist `gesamt_flaschen` (die kleinstmögliche logistische Einheit). Einzelflaschenbruch oder Teilmengen führen somit nie zu Rundungsfehlern.
+2.  **Transaktions-Logging:** Bestandsveränderungen werden nicht flüchtig überschrieben, sondern zeitscharf in der Tabelle `lager_historie` mitgeschrieben. Der zeitliche Verlauf im Frontend wird performant über die kumulierte Summe (`cumsum()`) des transaktionalen Deltas errechnet.
 
