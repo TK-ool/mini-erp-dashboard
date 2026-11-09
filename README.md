@@ -44,3 +44,13 @@ Um Datenredundanzen und Inkonsistenzen im ERP-System vollständig zu vermeiden, 
 1. **Atomare Speicherung:** Der einzige physisch veränderbare Zähler in der Tabelle `produkte` ist `gesamt_flaschen` (die kleinstmögliche logistische Einheit). Einzelflaschenbruch oder Teilmengen führen somit nie zu Rundungsfehlern.
 2.  **Transaktions-Logging:** Bestandsveränderungen werden nicht flüchtig überschrieben, sondern zeitscharf in der Tabelle `lager_historie` mitgeschrieben. Der zeitliche Verlauf im Frontend wird performant über die kumulierte Summe (`cumsum()`) des transaktionalen Deltas errechnet.
 
+---
+## Roadmap & zukünftige Features
+
+Ich plane dieses Projekt zukünftig stetig weiterzuentwickeln. Die folgenden Ideen möchte ich noch umsetzen:
+
+- [] ** Rollenbasiertes Login-System: ** Absicherung des Dashboards durch ein Login-Menü, welches zwischen Administrator, Logistik-Mitarbeiter und Gast unterscheidet
+- [] ** Erweiterte visuelle Analytics **
+- [] ** Automatisierte Daten-Generierung **
+- [] ** Cloud Deployment **
+- [] ** Interaktives User-Tutorial **
