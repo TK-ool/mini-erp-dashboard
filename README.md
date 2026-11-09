@@ -35,7 +35,7 @@ Das relationale Datenmodell basiert auf der Krähenfuß-Notation:
 
 
 
-!\[ER-Diagramm](res/database\_diagram.png)
+!\[ER-Diagramm](https://github.com/TK-ool/mini-erp-dashboard/blob/main/res/database_diagram.png)
 
 
 
