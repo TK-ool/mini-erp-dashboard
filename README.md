@@ -34,7 +34,7 @@ Das relationale Datenmodell basiert auf der Krähenfuß-Notation:
 py -m streamlit run app.py
 ```
 
-*Nach wenigen Sekunden öffnet sich das Dashboard automatisch in Ihrem Standard-Browser unter 'http://localhost:8501'.\*
+*Nach wenigen Sekunden öffnet sich das Dashboard automatisch in Ihrem Standard-Browser unter 'http://localhost:8501'*
 
 ---
 ## Datenbank-Architektur im Detail
