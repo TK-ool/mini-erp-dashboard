@@ -49,8 +49,8 @@ Um Datenredundanzen und Inkonsistenzen im ERP-System vollständig zu vermeiden, 
 
 Ich plane dieses Projekt zukünftig stetig weiterzuentwickeln. Die folgenden Ideen möchte ich noch umsetzen:
 
-- [] **Rollenbasiertes Login-System:** Absicherung des Dashboards durch ein Login-Menü, welches zwischen Administrator, Logistik-Mitarbeiter und Gast unterscheidet
-- [] **Erweiterte visuelle Analytics**
-- [] **Automatisierte Daten-Generierung**
-- [] **Cloud Deployment**
-- [] ** Interaktives User-Tutorial **
+- [ ] **Rollenbasiertes Login-System:** Absicherung des Dashboards durch ein Login-Menü, welches zwischen Administrator, Logistik-Mitarbeiter und Gast unterscheidet
+- [ ] **Erweiterte visuelle Analytics**
+- [ ] **Automatisierte Daten-Generierung**
+- [ ] **Cloud Deployment**
+- [ ] ** Interaktives User-Tutorial **
