@@ -52,5 +52,5 @@ Ich plane dieses Projekt zukünftig stetig weiterzuentwickeln. Die folgenden Ide
 - [ ] **Login-System nach Rollen:** Absicherung des Dashboards durch ein Login-Menü, welches zwischen Administrator, Logistik-Mitarbeiter und Gast unterscheidet
 - [ ] **Erweiterte visuelle Analytics:** Mehr Möglichkeiten sich den Warenbestand im Dashboard anzeigen zu lassen und Trends zu erkennen
 - [ ] **Automatisierte Daten-Generierung:** Zu Demo zwecken soll per Knopfdruck eine Lagerhistorie generiert werden können
-- [ ] **Cloud Deployment:** Unabhängig von Standort aufrufbar
+- [ ] **Cloud Deployment:** Unabhängig von Standort aufrufbar. Hierzu ist ein Wechsel von SQLite zu PostgreSQL nötig
 - [ ] **Interaktives User-Tutorial:** Zu Demo zwecken soll es eine kurze Einleitung in das Dashboard geben
