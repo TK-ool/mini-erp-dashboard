@@ -2,7 +2,7 @@
 
 Ein kompakter **Enterprise-Resource-Planning (ERP)** und **Warehouse Management System (WMS)** Prototyp für einen imaginären Getränke-Großhandel.
 
-Dieses Projekt demonstriert das Zusammenspiel aus einer relationalen Datenbankarchitektur, Backend-Logik und einer modernen und interaktiven Web-Benutzeroberfläche.
+In diesem Projekt setze ich mich mit relationalen Datenbanksystemen (SQLite), der entsprechhenden Backend-Logik mit Python und der Entwicklung einer Weboberfläche für Benutzer durch das Streamlit Framework auseinander.
 
 ---
 ## Features
