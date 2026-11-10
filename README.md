@@ -7,15 +7,14 @@ Dieses Projekt demonstriert das Zusammenspiel aus einer relationalen Datenbankar
 ---
 ## Features
 
-* **Echtzeit-Inventur:**
-* **Logistisches Gebindemanagement:**
-* **Wareneinkauf**
-* **Historischer Bestandsverlauf**
+* **Echtzeit-Inventur:** Der aktuelle Stand der Datenbank kann jederzeit agnezeigt werden, um einen genauen Überblick über den Warenbestand zu erhalten.
+* **Wareneinkauf und -verkauf:** Waren können über einen Knpfdruck eingekauft und ausgebucht werden.
+* **Historischer Bestandsverlauf:** Bei bestehender Lagerhistorie kann der Verlau eines jedes Produkts eingesehen werden.
 
 ---
 ## Datenmodell (ER-Diagramm)
 
-Das relationale Datenmodell basiert auf der Krähenfuß-Notation:
+Das relationale Datenmodell basiert auf der Krähenfuß-Notation. Es wurde über das Tool [databasediagram.com](https://databasediagram.com/app) entwickelt:
 
 ![ER-Diagramm](res/database_diagram.png)
 
@@ -49,8 +48,8 @@ Um Datenredundanzen und Inkonsistenzen im ERP-System vollständig zu vermeiden, 
 
 Ich plane dieses Projekt zukünftig stetig weiterzuentwickeln. Die folgenden Ideen möchte ich noch umsetzen:
 
-- [ ] **Rollenbasiertes Login-System:** Absicherung des Dashboards durch ein Login-Menü, welches zwischen Administrator, Logistik-Mitarbeiter und Gast unterscheidet
-- [ ] **Erweiterte visuelle Analytics**
-- [ ] **Automatisierte Daten-Generierung**
-- [ ] **Cloud Deployment**
-- [ ] ** Interaktives User-Tutorial **
+- [ ] **Login-System nach Rollen:** Absicherung des Dashboards durch ein Login-Menü, welches zwischen Administrator, Logistik-Mitarbeiter und Gast unterscheidet
+- [ ] **Erweiterte visuelle Analytics:** Mehr Möglichkeiten sich den Warenbestand im Dashboard anzeigen zu lassen und Trends zu erkennen
+- [ ] **Automatisierte Daten-Generierung:** Zu Demo zwecken soll per Knopfdruck eine Lagerhistorie generiert werden können
+- [ ] **Cloud Deployment:** Unabhängig von Standort aufrufbar
+- [ ] **Interaktives User-Tutorial:** Zu Demo zwecken soll es eine kurze Einleitung in das Dashboard geben
