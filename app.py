@@ -16,7 +16,7 @@ lit.title("ERP Mini Retail Manager Dashboard")
 # 1.3 Begrüßungsnachricht
 lit.write("Willkommen im Logistik- und Stammdaten-Zentrum von Flaschenflug!")
 
-# PFAD-FIX: Ermittelt den absoluten Pfad des aktuellen Ordners, in dem app.py liegt
+# Ermittelt den absoluten Pfad des aktuellen Ordners, in dem app.py liegt
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "retail_manager.db")
 
@@ -32,9 +32,6 @@ if "kisten" not in lit.session_state:
 # Hilfsfunktion für Berechnungen Kisten/Flaschen
 def update_via_flaschen():
     lit.session_state.kisten = lit.session_state.flaschen/FLASCHEN_PRO_KISTE
-
-def update_via_kisten():
-    lit.session_state.flaschen = int(lit.session_state.kisten * FLASCHEN_PRO_KISTE)
 
 def reset_inputs():
     lit.session_state.flaschen = 0
@@ -121,7 +118,7 @@ neue_kisten = lit.number_input(
     key="kisten_input"
 )
 
-
+# Funktion zum Einbuchen neuer Waren. Liest Produkt Name aus Eingabefeld und übergibt ihn in die SQL-Query
 def buchen():
     produkt_name = lit.session_state.produkt_auswahl
     # Werte aus dem Widget-State holen, nicht aus Variablen außerhalb
@@ -132,14 +129,18 @@ def buchen():
         (produkt_name,), fetch=True
     )
 
+    # SQL-Statement zum Erhöhen des Bestandes
     if ergebnis:
         pid, alte_flaschen, vpe = ergebnis[0]
         zubuchende_flaschen = kisten * vpe
 
+        # Einschreiben in Datenbank
         run_query(
             "UPDATE produkte SET gesamt_flaschen = ? WHERE produkt_id = ?",
             (alte_flaschen + zubuchende_flaschen, pid)
         )
+
+        #Lager Historie updaten
         run_query(
             "INSERT INTO lager_historie (produkt_id, aenderung_flaschen) VALUES (?, ?)",
             (pid, zubuchende_flaschen)
@@ -147,11 +148,12 @@ def buchen():
         lit.session_state.buchung_erfolgreich = True
         lit.toast("Daten erfolgreich in das ERP-System verbucht!")
 
+# Funktion zum Ausbuchen von Waren. Liest Produkt Name aus Eingabefeld und übergibt ihn in die SQL-Query
 def entfernen():
     produkt_name = lit.session_state.produkt_auswahl
     kisten = lit.session_state.kisten_input
 
-    # Aktuellen Bestand in DB holen
+    # Aktuellen Bestand aus DB holen
     ergebnis = run_query(
         "SELECT produkt_id, gesamt_flaschen, flaschen_pro_kiste FROM produkte WHERE name = ?",
         (produkt_name,), fetch=True
@@ -162,15 +164,18 @@ def entfernen():
         pid, alte_flaschen, vpe = ergebnis[0]
         zuentfernende_flaschen = kisten * vpe
 
+        # Zu wenig Flaschen auf Lager
         if alte_flaschen - zuentfernende_flaschen < 0:
             lit.toast("So viel ist nicht auf Lager. Bitte nachbestellen!")
             lit.session_state.buchung_erfolgreich = False
         else:
+            # Update DB mit niedrigerem Bestand
             run_query(
                 "UPDATE produkte SET gesamt_flaschen = ? WHERE produkt_id = ?",
                 (alte_flaschen - zuentfernende_flaschen, pid)
             )
 
+            # Update Lager Historie Datenbank
             run_query(
                 "INSERT INTO lager_historie (produkt_id, aenderung_flaschen) VALUES (?, ?)",
                 (pid, (-zuentfernende_flaschen))
