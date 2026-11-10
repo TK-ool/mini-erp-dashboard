@@ -25,7 +25,7 @@ Das relationale Datenmodell basiert auf der Krähenfuß-Notation. Es wurde über
 * **Datenverarbeitung & Anaytics:** Pandas  
 * **Datenbank:** SQLite (dateibasierte relationale DB)
 * **Frontend / UI:** Streamlit (Interaktives Web-Framework)
-* **Graffiken:** databasediagram.com
+* **Grafiken:** databasediagram.com
 
 ---
 ## Installation und Lokaler Start
