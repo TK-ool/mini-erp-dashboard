@@ -12,6 +12,24 @@ In diesem Projekt setze ich mich mit relationalen Datenbanksystemen (SQLite), de
 * **Historischer Bestandsverlauf:** Bei bestehender Lagerhistorie kann der Verlau eines jedes Produkts eingesehen werden.
 
 ---
+## Einblick in das Dashboard (Screenshots)
+Ein kleiner visueller Einblick in die Benutzeroberfläche des ERP-Prototyps:
+
+### 1. Lagerbestand:
+Die Benutzeroberfläche zeigt die Bestände in Echtzeit, augeteilt nach herstellerspezifischen Verpackungseinheiten (VPE). Kritische Warenmengen werden farblich hervorgehoben:
+![ERP Dashboard Übersicht](res/dashboard_view.png)
+
+### 2. Wareneingang und -ausgang
+Hier können neue Kisten nachbestellt oder ausgebucht werden. Die Kisten werden mittels SQL-Statements in die Datenbank geschrieben.
+![ERP Dashboard Bestellen](res/dashboard_order.png)
+
+### 3. Historische Analytics (Bestandsverlauf)
+Hier zeigt ein interaktives Diagramm die Bestandentwicklung über die Zeit an.
+![ERP Dashboard Übersicht](res/dashboard_history.png)
+
+Screenshots zeigen natürlich nicht wie das Systewm funktioniert. Um das System auf einem lokalen Rechner zu starten, folgen Sie [der Anleitung](##Installation-und-Lokaler-Start).
+
+---
 ## Datenmodell (ER-Diagramm)
 
 Das relationale Datenmodell basiert auf der Krähenfuß-Notation. Es wurde über das Tool [databasediagram.com](https://databasediagram.com/app) entwickelt:
