@@ -30,7 +30,7 @@ Hier zeigt ein interaktives Diagramm die Bestandentwicklung über die Zeit an. D
 
 ![ERP Dashboard Übersicht](res/dashboard_history.png)
 
-Screenshots zeigen natürlich nicht wie das Systewm funktioniert. Um das System auf einem lokalen Rechner zu starten, folgen Sie [der Anleitung](##installation-und-lokaler-start).
+Screenshots zeigen natürlich nicht wie das Systewm funktioniert. Um das System auf einem lokalen Rechner zu starten, folgen Sie [der Anleitung](#installation-und-lokaler-start).
 
 ---
 ## Datenmodell (ER-Diagramm)
