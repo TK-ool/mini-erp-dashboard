@@ -16,7 +16,7 @@ In diesem Projekt setze ich mich mit relationalen Datenbanksystemen (SQLite), de
 Ein kleiner visueller Einblick in die Benutzeroberfläche des ERP-Prototyps.
 
 ### 1. Lagerbestand:
-Die Benutzeroberfläche zeigt die Bestände in Echtzeit, augeteilt nach herstellerspezifischen Verpackungseinheiten (VPE). Kritische Warenmengen werden farblich hervorgehoben:
+Die Benutzeroberfläche zeigt die Bestände in Echtzeit, aufgeteilt nach herstellerspezifischen Verpackungseinheiten (VPE). Kritische Warenmengen werden farblich hervorgehoben:
 
 ![ERP Dashboard Übersicht](res/dashboard_view.png)
 
