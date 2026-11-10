@@ -13,18 +13,21 @@ In diesem Projekt setze ich mich mit relationalen Datenbanksystemen (SQLite), de
 
 ---
 ## Einblick in das Dashboard (Screenshots)
-Ein kleiner visueller Einblick in die Benutzeroberfläche des ERP-Prototyps:
+Ein kleiner visueller Einblick in die Benutzeroberfläche des ERP-Prototyps.
 
 ### 1. Lagerbestand:
 Die Benutzeroberfläche zeigt die Bestände in Echtzeit, augeteilt nach herstellerspezifischen Verpackungseinheiten (VPE). Kritische Warenmengen werden farblich hervorgehoben:
+
 ![ERP Dashboard Übersicht](res/dashboard_view.png)
 
 ### 2. Wareneingang und -ausgang
-Hier können neue Kisten nachbestellt oder ausgebucht werden. Die Kisten werden mittels SQL-Statements in die Datenbank geschrieben.
+Hier können neue Kisten nachbestellt oder ausgebucht werden. Die Kisten werden mittels SQL-Querys in die Datenbank geschrieben.
+
 ![ERP Dashboard Bestellen](res/dashboard_order.png)
 
 ### 3. Historische Analytics (Bestandsverlauf)
-Hier zeigt ein interaktives Diagramm die Bestandentwicklung über die Zeit an.
+Hier zeigt ein interaktives Diagramm die Bestandentwicklung über die Zeit an. Die Daten werden mittels SQL-Querys aus der Datenbank gelesen.
+
 ![ERP Dashboard Übersicht](res/dashboard_history.png)
 
 Screenshots zeigen natürlich nicht wie das Systewm funktioniert. Um das System auf einem lokalen Rechner zu starten, folgen Sie [der Anleitung](##Installation-und-Lokaler-Start).
