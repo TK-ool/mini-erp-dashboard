@@ -8,8 +8,8 @@ In diesem Projekt setze ich mich mit relationalen Datenbanksystemen (SQLite), de
 ## Features
 
 * **Echtzeit-Inventur:** Der aktuelle Stand der Datenbank kann jederzeit angezeigt werden, um einen genauen Überblick über den Warenbestand zu erhalten.
-* **Wareneinkauf und -verkauf:** Waren können über einen Knpfdruck eingekauft und ausgebucht werden.
-* **Historischer Bestandsverlauf:** Bei bestehender Lagerhistorie kann der Verlau eines jedes Produkts eingesehen werden.
+* **Wareneinkauf und -verkauf:** Waren können über einen Knopfdruck eingekauft und ausgebucht werden.
+* **Historischer Bestandsverlauf:** Bei bestehender Lagerhistorie kann der Verlauf eines jeden Produkts eingesehen werden.
 
 ---
 ## Einblick in das Dashboard (Screenshots)
@@ -21,16 +21,16 @@ Die Benutzeroberfläche zeigt die Bestände in Echtzeit, aufgeteilt nach herstel
 ![ERP Dashboard Übersicht](res/dashboard_view.png)
 
 ### 2. Wareneingang und -ausgang
-Hier können neue Kisten nachbestellt oder ausgebucht werden. Die Kisten werden mittels SQL-Querys in die Datenbank geschrieben.
+Hier können neue Kisten nachbestellt oder ausgebucht werden. Die Kisten werden mittels SQL-Queries in die Datenbank geschrieben.
 
 ![ERP Dashboard Bestellen](res/dashboard_order.png)
 
 ### 3. Historische Analytics (Bestandsverlauf)
-Hier zeigt ein interaktives Diagramm die Bestandentwicklung über die Zeit an. Die Daten werden mittels SQL-Querys aus der Datenbank gelesen.
+Hier zeigt ein interaktives Diagramm die Bestandentwicklung über die Zeit an. Die Daten werden mittels SQL-Queries aus der Datenbank gelesen.
 
 ![ERP Dashboard Übersicht](res/dashboard_history.png)
 
-Screenshots zeigen natürlich nicht wie das Systewm funktioniert. Um das System auf einem lokalen Rechner zu starten, folgen Sie [der Anleitung](#installation-und-lokaler-start).
+Screenshots zeigen natürlich nicht wie das System funktioniert. Um das System auf einem lokalen Rechner zu starten, folgen Sie [der Anleitung](#installation-und-lokaler-start).
 
 ---
 ## Datenmodell (ER-Diagramm)
@@ -43,7 +43,7 @@ Das relationale Datenmodell basiert auf der Krähenfuß-Notation. Es wurde über
 ## Genutzte Technologien
 
 * **Backend & Logik:** Python 3 (inkl. 'sqlite3', 'os')
-* **Datenverarbeitung & Anaytics:** Pandas  
+* **Datenverarbeitung & Analytics:** Pandas  
 * **Datenbank:** SQLite (dateibasierte relationale DB)
 * **Frontend / UI:** Streamlit (Interaktives Web-Framework)
 * **Grafiken:** databasediagram.com
@@ -53,7 +53,7 @@ Das relationale Datenmodell basiert auf der Krähenfuß-Notation. Es wurde über
 
 ### 1. Repository klonen
 ```bash
-git clone https://github.com
+git clone https://github.com/TK-ool/mini-erp-dashboard
 cd mini-erp-dashboard
 ```
 
