@@ -30,11 +30,22 @@ Das relationale Datenmodell basiert auf der Krähenfuß-Notation. Es wurde über
 ---
 ## Installation und Lokaler Start
 
+### 1. Repository klonen
+```bash
+git clone https://github.com
+cd mini-erp-dashboard
+```
+
+### 2. Abhängigkeiten installieren
+```bash
+py -m pip install -r requirements.txt
+```
+
+### 3. Anwendung starten
 ```bash
 py -m streamlit run app.py
 ```
-
-*Nach wenigen Sekunden öffnet sich das Dashboard automatisch in Ihrem Standard-Browser unter 'http://localhost:8501'*
+*Nach wenigen Sekunden öffnet sich das Dashboard automatisch in Ihrem Standard-Browser unter `http://localhost:8501`.*
 
 ---
 ## Datenbank-Architektur im Detail
