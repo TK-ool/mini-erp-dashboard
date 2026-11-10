@@ -7,7 +7,7 @@ In diesem Projekt setze ich mich mit relationalen Datenbanksystemen (SQLite), de
 ---
 ## Features
 
-* **Echtzeit-Inventur:** Der aktuelle Stand der Datenbank kann jederzeit agnezeigt werden, um einen genauen Überblick über den Warenbestand zu erhalten.
+* **Echtzeit-Inventur:** Der aktuelle Stand der Datenbank kann jederzeit angezeigt werden, um einen genauen Überblick über den Warenbestand zu erhalten.
 * **Wareneinkauf und -verkauf:** Waren können über einen Knpfdruck eingekauft und ausgebucht werden.
 * **Historischer Bestandsverlauf:** Bei bestehender Lagerhistorie kann der Verlau eines jedes Produkts eingesehen werden.
 
