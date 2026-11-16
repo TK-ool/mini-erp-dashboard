@@ -26,7 +26,7 @@ Hier können neue Kisten nachbestellt oder ausgebucht werden. Die Kisten werden 
 ![ERP Dashboard Bestellen](res/dashboard_order.png)
 
 ### 3. Historische Analytics (Bestandsverlauf)
-Hier zeigt ein interaktives Diagramm die Bestandentwicklung über die Zeit an. Die Daten werden mittels SQL-Queries aus der Datenbank gelesen.
+Hier zeigt ein interaktives Diagramm die Bestandentwicklung über die Zeit an. Die Daten werden mittels SQL-Queries aus der Datenbank gelesen. Zu Demo Zwecken kann mit dem unteren Button die Datenbank zurückgesetzt und mit neuen Zufallsdaten generiert werden.
 
 ![ERP Dashboard Übersicht](res/dashboard_history_v2.png)
 
