@@ -21,7 +21,7 @@ Die Benutzeroberfläche zeigt die Bestände in Echtzeit, aufgeteilt nach herstel
 ![ERP Dashboard Übersicht](res/dashboard_view.png)
 
 ### 2. Wareneingang und -ausgang
-Hier können neue Kisten nachbestellt oder ausgebucht werden. Die Kisten werden mittels SQL-Queries in die Datenbank geschrieben.
+Hier können neue Kisten nachbestellt oder ausgebucht werden. Die Kisten werden mittels SQL-Queries in die Datenbank geschrieben. In einem DropDown-Menü kann zwischen den vorhandenen und bestellbaren Produkten ausgewählt werden.
 
 ![ERP Dashboard Bestellen](res/dashboard_order.png)
 
