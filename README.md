@@ -74,7 +74,7 @@ py -m streamlit run app.py
 Um Datenredundanzen und Inkonsistenzen im ERP-System vollständig zu vermeiden, steuert das System die Bestände über zwei zentrale Prinzipien:
 
 1. **Atomare Speicherung:** Der einzige physisch veränderbare Zähler in der Tabelle `produkte` ist `gesamt_flaschen` (die kleinstmögliche logistische Einheit). Einzelflaschenbruch oder Teilmengen führen somit nie zu Rundungsfehlern.
-2.  **Transaktions-Logging:** Bestandsveränderungen werden nicht flüchtig überschrieben, sondern zeitscharf in der Tabelle `lager_historie` mitgeschrieben. Der zeitliche Verlauf im Frontend wird performant über die kumulierte Summe (`cumsum()`) des transaktionalen Deltas errechnet.
+2.  **Transaktions-Logging:** Bestandsveränderungen werden nicht flüchtig überschrieben, sondern in der Tabelle `lager_historie` mitgeschrieben. Der zeitliche Verlauf im Frontend wird über die kumulierte Summe (`cumsum()`) des transaktionalen Deltas errechnet.
 
 ---
 ## Roadmap & zukünftige Features
